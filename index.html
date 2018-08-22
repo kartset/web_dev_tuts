@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Div Tag Example</title>
+		<script src="js/script.js" type="text/javascript"> </script>
+		<script type="text/JavaScript">
+			function EventHandler(){
+				alert("I'm event handler!!");
+			}
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	</head>
+	<body>
+
+		<div id="menu" align="middle">
+			<a href="/index.htm">HOME</a> |
+			<a href="/about/contact_us.htm">CONTACT</a> |
+			<a href="/about/index.htm">ABOUT</a>
+		</div>
+
+		<div id="content" align="left" bgcolor="white">	
+			<center>
+				<h5>Content Articles</h5>
+				<p>Actual content goes here.....</p>
+			</center>
+		</div>
+
+		<p>The following word has been <mark>marked</mark> with yellow</p>
+
+		<p>This chapter covers marking up text in <acronym>XHTML</acronym>.</p>
+
+		<p>My best friend's name is <abbr title="Abhishek">Abhy</abbr>.</p>
+
+		<p>I want to drink <del>cola</del> <ins>wine</ins></p>
+
+		<h3 title="Hello HTML!">Titled Heading Tag Example</h3>
+
+		<p>The following word uses a <big><big><big>big</big></big></big> typeface.</p>
+
+		<p><bdo dir="rtl">This text will go right to left.</bdo></p>
+
+		<p>The following word is a <dfn>special</dfn> term.</p>
+
+		<p>Amit is in Spain, <q>I think I am wrong</q>.</p>
+
+		<pre>
+			<code>
+				function <var>testFunction</var>( <var>strText</var> ){
+					alert (<var>strText</var>)
+				}
+			</code>
+		</pre>
+
+		<p>Regular text. <kbd>This is inside kbd element</kbd> Regular text.</p>
+
+		<address><b>388A, Road No 22, Jubilee Hills - Hyderabad</b></address>
+
+		<img src = "U SNAP.jpg" alt = "Snap" width = "250" height = "300" border="3" align="right" />
+		
+
+		<table border="1" bordercolor="blue" bgcolor="yellow" >
+			<tr>
+				<th>Name </th>	
+				<th>Salary</th>
+			</tr>
+
+			<tr>
+				<td>Ramesh Raman </td>	
+				<td>5000</td>
+			</tr>
+			
+			<tr>
+				<td>Shabbir Hussain</td>
+				<td>7000</td>
+			</tr>
+		</table>
+
+		<table>
+			<tr>
+				<th>Name </th>	
+				<th>Salary</th>
+			</tr>
+
+			<tr>
+				<td><img src = "U SNAP.jpg" alt = "snap" width = "100" height = "100"></td>	
+				<td>5000</td>
+			</tr>
+			
+			<tr>
+				<td><img src = "U SNAP.jpg" alt = "snap" width = "100" height = "100"></td>
+				<td>7000</td>
+			</tr>
+		</table>
+
+		<dl>
+			<dt><b>HTML</b></dt>
+			<dd>This stands for Hyper Text Markup Language</dd>
+
+			<dt><b>HTTP</b></dt>
+			<dd>This stands for Hyper Text Transfer Protocol</dd>
+		</dl>
+
+		<basefont face="arial, verdana, sans-serif" size="2" color="#ff0000">
+		<p>This is the page's default font.</p>
+		<h2>Example of the &lt;basefont&gt; Element</h2>
+		<p>
+			<font size="+2" color="darkgray">
+				This is darkgray text with two sizes larger
+			</font></p>
+		<p>
+			<font face="courier" size="-1" color="#000000">
+				It is a courier font, a size smaller and black in color.
+			</font></p>
+
+		<marquee>This is basic example of marquee</marquee>
+		<marquee width="50%">This example will take only 50% width</marquee>
+		<marquee direction="right">This text will scroll from left to right</marquee>
+		<marquee direction="up">This text will scroll from bottom to up</marquee>
+
+		<input type="button" onclick="Hello();" name="ok" value="Click Me!" style="cursor:pointer;">
+
+		<p onmouseover="EventHandler();">Bring your mouse here to see an alert</p>
+
+		<table width="100%" border="0">
+			<tr valign="top">
+				<td bgcolor="#aaa" width="20%">
+					<b>Main Menu</b><br />
+						HTML<br />
+						PHP<br />
+						PERL...
+				</td>
+
+				<td bgcolor="#b5dcb3" height="200" width="60%">
+					Technical and Managerial Tutorials
+				</td>
+
+				<td bgcolor="#aaa" width="20%">
+					<b>Right Menu</b><br />
+						HTML<br />
+						PHP<br />
+						PERL...
+				</td>
+			</tr>
+
+		<div style="width:100%">
+
+			<div style="background-color:#b5dcb3; width:100%">
+				<h1>This is Web Page Main title</h1>
+			</div>
+
+			<div style="background-color:#aaa; height:200px;width:100px;float:left;">
+				<div><b>Main Menu</b></div>
+					HTML<br />
+					PHP<br />
+					PERL...
+				</div>
+
+				<div style="background-color:#eee; height:200px;width:350px;float:left;">
+					<p>Technical and Managerial Tutorials</p>
+				</div>
+
+				<div style="background-color:#aaa; height:200px;width:100px;float:right;">
+					<div><b>Right Menu</b></div>
+						HTML<br />
+						PHP<br />
+						PERL...
+					</div>
+
+					<div style="background-color:#b5dcb3;clear:both">
+						<center>
+							Copyright © 2007 Tutorialspoint.com
+						</center>
+					</div>
+				</div>
+			</div>
+
+		<a href = "www.google.com"> Google</a>
+
+		<p>Move the mouse over the words to see the cursor change:</p>
+		<div style="cursor:auto">Auto</div>
+		<div style="cursor:crosshair">Crosshair</div>
+		<div style="cursor:default">Default</div>
+		<div style="cursor:pointer">Pointer</div>
+		<div style="cursor:move">Move</div>
+		<div style="cursor:e-resize">e-resize</div>
+		<div style="cursor:ne-resize">ne-resize</div>
+		<div style="cursor:nw-resize">nw-resize</div>
+		<div style="cursor:n-resize">n-resize</div>
+		<div style="cursor:se-resize">se-resize</div>
+		<div style="cursor:sw-resize">sw-resize</div>
+		<div style="cursor:s-resize">s-resize</div>
+		<div style="cursor:w-resize">w-resize</div>
+		<div style="cursor:text">text</div>
+		<div style="cursor:wait">wait</div>
+		<div style="cursor:help">help</div>
+
+		<table class="one">
+		<caption>Collapse Border Example</caption>
+		<tr><td class="a"> Cell A Collapse Example</td></tr>
+		<tr><td class="b"> Cell B Collapse Example</td></tr>
+		</table>
+
+		<br />
+
+		<table class="two">
+		<caption class="bottom">Separate Border Example</caption>
+		<tr><td class="a"> Cell A Separate Example</td></tr>
+		<tr><td class="b"> Cell B Separate Example</td></tr>
+		</table>
+
+		<table class="three" border="5">
+		<caption class="right">Separate Border Example with border-spacing</caption>
+		<tr><td> Cell A Collapse Example</td></tr>
+		<tr><td> Cell B Collapse Example</td></tr>
+		</table>
+
+		<br />
+
+		<table class="four" border="5">
+		<caption>Separate Border Example with border-spacing</caption>
+		<tr><td> Cell A Separate Example</td></tr>
+		<tr><td> Cell B Separate Example</td></tr>
+		</table>
+
+		<table class="empty">
+		<tr>
+			<th></th>
+			<th>Title one</th>
+			<th>Title two</th>
+		</tr>
+
+		<tr>
+			<th>Row Title</th>
+			<td class="empty">value</td>
+			<td class="empty">value</td>
+		</tr>
+
+		<tr>
+			<th>Row Title</th>
+			<td class="empty">value</td>
+			<td class="empty"></td>
+		</tr>
+
+		</table>
+
+		<table class="auto" border="1" width="100%">
+			<tr>
+				<td width="20%">1000000000000000000000000000</td>
+				<td width="40%">10000000</td>
+				<td width="40%">100</td>
+			</tr>
+		</table>
+
+		<br />
+
+		<table class="fixed" border="1" width="100%">
+			<tr>
+				<td width="20%">1000000000000000000000000000</td>
+				<td width="40%">10000000</td>
+				<td width="40%">100</td>
+			</tr>
+		</table>
+
+		<p class="example1">
+			This example is showing all borders in different colors.
+		</p>
+
+		<p class="example2">
+			This example is showing all borders in green color only.
+		</p>
+
+		<p style="border-width:4px; border-style:none;">
+			This is a border with none width.
+		</p>
+
+		<p style="border-width:4px; border-style:solid;">
+			This is a solid border.
+		</p>
+
+		<p style="border-width:4px; border-style:dashed;">
+			This is a dahsed border.
+		</p>
+
+		<p style="border-width:4px; border-style:double;">
+			This is a double border.
+		</p>
+
+		<p style="border-width:4px; border-style:groove;">
+			This is a groove border.
+		</p>
+
+		<p style="border-width:4px; border-style:ridge">
+			This is aridge border.
+		</p>
+
+		<p style="border-width:4px; border-style:inset;">
+			This is a inset border.
+		</p>
+
+		<p style="border-width:4px; border-style:outset;">
+			This is a outset border.
+		</p>
+
+		<p style="border-width:4px; border-style:hidden;">
+			This is a hidden border.
+		</p>
+
+		<p style="border-width:4px;border-top-style:solid;border-bottom-style:dashed;border-left-style:groove;border-right-style:double;">
+			This is a a border with four different styles.
+		</p>
+
+		<p style="border-width:4px; border-style:solid;">
+			This is a solid border whose width is 4px.
+		</p>
+
+		<p style="border-width:4pt; border-style:solid;">
+			This is a solid border whose width is 4pt.
+		</p>
+
+		<p style="border-width:thin; border-style:solid;">
+			This is a solid border whose width is thin.
+		</p>
+
+		<p style="border-width:medium; border-style:solid;">
+			This is a solid border whose width is medium;
+		</p>
+
+		<p style="border-width:thick; border-style:solid;">
+			This is a solid border whose width is thick.
+		</p>
+
+		<p style="border-bottom-width:4px;border-top-width:10px;border-left-width: 2px;border-right-width:15px;border-style:solid;">
+			This is a a border with four different width.
+		</p>
+
+		<p style="margin: 15px; border:1px solid black;">
+			all four margins will be 15px
+		</p>
+
+		<p style="margin:10px 2%; border:1px solid black;">
+			top and bottom margin will be 10px, left and right margin will be 2% of the total width of the document.
+		</p>
+
+		<p style="margin: 10px 2% -10px; border:1px solid black;">
+			top margin will be 10px, left and right margin will be 2% of the total width of the document, bottom margin will be -10px.
+		</p>
+
+		<p style="margin: 10px 2% -10px auto; border:1px solid black;">
+			top margin will be 10px, right margin will be 2% of the total width of the document, bottom margin will be -10px, left margin will be set by the browser
+		</p>
+
+		<ul style="list-style-type:circle; list-stlye-position:outside;">
+			<li>Maths</li>
+			<li>Social Science</li>
+			<li>Physics</li>
+		</ul>
+
+		<ul style="list-style-type:square;list-style-position:inside;">
+			<li>Maths</li>
+			<li>Social Science</li>
+			<li>Physics</li>
+		</ul>
+
+		<ul style="list-style-type:square;list-style-position:inside;">
+			<li>Maths</li>
+			<li>Social Science</li>
+			<li>Physics</li>
+		</ul>
+
+		<ol style="list-style-type:decimal;list-style-position:outside;">
+			<li>Maths</li>
+			<li>Social Science</li>
+			<li>Physics</li>
+		</ol>
+
+		<ol style="list-style-type:lower-alpha;list-style-position:inside;">
+			<li>Maths</li>
+			<li>Social Science</li>
+			<li>Physics</li>
+		</ol>
+
+		<ul style="list-style: inside square;marker-offset:15px;">
+			<li style="list-style-image: url(bullet.png);">Maths</li>
+			<li style="list-style-image: url(bullet.png);">Social Science</li>
+			<li style="list-style-image: url(bullet.png);">Physics</li>
+		</ul>
+
+		<ol>
+			<li style="list-style-image: url(bullet.png);">Maths</li>
+			<li>Social Science</li>
+			<li>Physics</li>
+		</ol>
+
+	<p>Example of scroll value:</p>
+
+	<div class="scroll">
+		I am going to keep lot of content here just to show
+		you how scrollbars works if there is an overflow in
+		an element box. This provides your horizontal as well
+		as vertical scrollbars.
+	</div>
+	
+	<br />
+
+	<p>Example of auto value:</p>
+
+	<div class="auto">
+		I am going to keep lot of content here just to show
+		you how scrollbars works if there is an overflow in
+		an element box. This provides your horizontal as well
+		as vertical scrollbars.
+	</div>
+	
+	</body>
+</html>

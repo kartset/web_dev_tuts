@@ -1,0 +1,131 @@
+<html>
+<head>
+	<script type="text/javascript">
+		<!--
+		function sayHello() {
+			alert("Hello World")
+		}
+
+		function setCookie(cname,cvalue,exdays) {
+		    var d = new Date();
+    		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    		var expires = "expires=" + d.toGMTString();
+    		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+		}
+
+
+		function getCookie(cname) {
+    		var name = cname + "=";
+    		var decodedCookie = decodeURIComponent(document.cookie);
+    		var ca = decodedCookie.split(';');
+    		for(var i = 0; i < ca.length; i++) {
+        		var c = ca[i];
+        		while (c.charAt(0) == ' ') {
+            		c = c.substring(1);
+        		}
+        		if (c.indexOf(name) == 0) {
+            		return c.substring(name.length, c.length);
+        		}
+    		}
+    		return "";
+		}
+
+		function checkCookie() {
+    		var user=getCookie("username");
+    		if (user != "") {
+        		alert("Welcome again " + user);
+    		}
+
+    		else {
+       			user = prompt("Please enter your name:","");
+       			if (user != "" && user != null) {
+           		setCookie("username", user, 30);
+       			}
+    		}
+		}
+		//-->
+	</script>
+</head>
+<body onload="checkCookie()">
+
+	Click here for the result
+	<input type="button" onclick="sayHello()" value="Say Hello" />
+
+	<script language="javascript" type="text/javascript">
+		document.write ("Hello World!");
+	</script>
+
+	<script type="text/javascript">
+		function cnt() {
+			var count = 0;
+			document.write("Starting Loop<br />");
+			while (count < 10){
+				document.write("Current Count : " + count + "<br />");
+				count++;
+			}
+			document.write("Loop stopped!");
+		}
+
+		function floop() {
+			var count;
+			document.write("Starting Loop" + "<br />");
+				for(count = 0; count < 10; count++){
+					document.write("Current Count : " + count );
+					document.write("<br />");
+				}
+				document.write("Loop stopped!");
+		}
+
+		function over() {
+			document.write ("Mouse Over");
+		}
+
+		function out() {
+			document.write ("Mouse Out");
+		}
+
+		function WriteCookie()	{
+			if( document.myform.customer.value == "" ){
+				alert ("Enter some value!");
+				return;
+			}
+
+			cookievalue= escape(document.myform.customer.value) + ";";
+			document.cookie="name=" + cookievalue;
+			document.write ("Setting Cookies : " + "name=" + cookievalue );
+		}
+
+		function ReadCookie()	{
+			var allcookies = document.cookie;
+			document.write ("All Cookies : " + allcookies );
+			// Get all the cookies pairs in an array
+			cookiearray = allcookies.split(';');
+			// Now take key value pair out of this array
+			for(var i=0; i<cookiearray.length; i++){
+				name = cookiearray[i].split('=')[0];
+				value = cookiearray[i].split('=')[1];
+				document.write ("Key is : " + name + " and Value is : " + value);
+			}
+		}
+
+	</script>
+
+	<br />
+	<input type="button" onclick="cnt()" value="Count" />
+	<input type="button" onclick="floop()" value="For Loop" />
+	<form name="myform" action="">
+		Enter name: <input type="text" name="customer"/>
+		<input type="button" value="Set Cookie" onclick="WriteCookie();"/>
+	</form>
+
+	<form name="myform1" action="">
+		<p> click the following button and see the result:</p>
+		<input type="button" value="Get Cookie" onclick="ReadCookie()"/>
+	</form>
+
+	<p>Bring your mouse inside the division to see the result:</p>
+	<div onmouseover="over()" onmouseout="out()">
+		<h2> This is inside the division </h2>
+	</div>
+</body>
+</html>
