@@ -1,0 +1,28 @@
+
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #006600;
+}
+
+a:hover {
+	color: #FFCC00;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #FF00CC;
+}
+
+input[type="button"] {
+	color: rgb(160,160,0);
+
+}
+
+body > table {
+	color: #000000;
+}
+
